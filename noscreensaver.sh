@@ -1,0 +1,2 @@
+#!/bin/bash
+count=1; while true; do echo "Hitting CTRL button on keyboard for prevent screen blanking and screensaver..."; xdotool key CTRL; sleep 60; ((count++)); if [ $count -eq "42" ]; then clear; count=1; fi done
